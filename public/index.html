@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Peer Video</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="user">
+        <div class="my-video">
+          <video></video>
+        </div>
+        <div>
+          <form class="create-offer">
+            <input type="text" name="offer-sdp" />
+            <button>Create Offer</button>
+          </form>
+          <form class="accept-answer">
+            <input type="text" />
+            <button>Accept Answer</button>
+          </form>
+        </div>
+      </div>
+      <div class="peer">
+        <div class="peer-video">
+          <video></video>
+        </div>
+        <div>
+          <form class="create-answer">
+            <input type="text" />
+            <button>Create Answer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js" async defer></script>
+  </body>
+</html>

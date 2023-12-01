@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    to bottom right,
+    #355070,
+    #7a5197,
+    #bb5098,
+    #f47f6b
+  );
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.user,
+.peer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 75%;
+  width: 50%;
+}
+
+#user-id,
+#peer-id {
+  height: 1.5rem;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.my-video,
+.peer-video {
+  width: 70%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.my-video > video,
+.peer-video > video {
+  display: block;
+  width: 100%;
+  transform: scaleX(-1);
+  border-radius: 20px;
+}
